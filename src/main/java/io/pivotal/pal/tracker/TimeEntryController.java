@@ -15,8 +15,7 @@ public class TimeEntryController {
     private TimeEntry timeEntryToCreate;
     //private ResponseEntity responseEntity;
 
-
-
+    @Autowired
     public TimeEntryController(TimeEntryRepository timeEntryRepository) {
         this.repo = timeEntryRepository;
     }

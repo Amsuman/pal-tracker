@@ -4,6 +4,7 @@ import javax.swing.*;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.HashMap;
+import java.util.List;
 
 public class InMemoryTimeEntryRepository implements TimeEntryRepository {
     HashMap repo = new HashMap();
@@ -25,8 +26,8 @@ public class InMemoryTimeEntryRepository implements TimeEntryRepository {
     }
 
     @Override
-    public Collection list() {
-       Collection <TimeEntry>result = new ArrayList(repo.values());
+    public List<TimeEntry> list() {
+       List <TimeEntry>result = new ArrayList(repo.values());
        return result;
     }
 
